@@ -83,7 +83,25 @@ wheel (0.24.0)
 
 
 
-### 3. Check your code quality
+### 3. Kick the Tires
+To get started the project includes a sample command `get_stats.py` (and an associated test) that will use the Qumulo REST API to get filesystem stats for a specified cluster; you can run it like this (changing the host, port and user acct/pwd parameters to match your local environment):
+
+```
+/get_stats.py --host dev --user clusteruser --pass pwd --port 20095
+```
+
+your output from running this command should look something like this:
+
+```
+{
+    "block_size_bytes": 4096,
+    "free_size_bytes": "11254198272",
+    "raw_size_bytes": "28521267200",
+    "total_size_bytes": "11254276096"
+}
+```
+
+### 4. Check your code quality
 We support [Pylint](http://www.pylint.org/) and [JsHint](http://jshint.com/) / [EsLint](http://eslint.org/) to ensure that sample code meets coding standards such as [PEP8](https://www.python.org/dev/peps/pep-0008/) and Qumulo's own coding standards for Python and Javascript.  To check your code against the checking rules, just run
 
 ```
@@ -96,8 +114,8 @@ We support [Pylint](http://www.pylint.org/) and [JsHint](http://jshint.com/) / [
 from the directory where you downloaded this sample project.
 
 
-### 4. Create and run tests to verify that your sample works
-We support Python unit tests via [Nose](http://pythontesting.net/framework/nose/nose-introduction/) and Javascript tests using [Jasmine](http://jasmine.github.io/2.3/introduction.html).  You can run all python and javascript tests in the current directory by running the following shell script:
+### 5. Create and run tests to verify that your sample works
+We support Python unit tests via [Nose](http://pythontesting.net/framework/nose/nose-introduction/) and Javascript tests using [Jasmine](http://jasmine.github.io/2.3/introduction.html).  You can run all python and javascript tests in the current directory (one python test is included by default) by running the following shell script:
 
 ```
 
