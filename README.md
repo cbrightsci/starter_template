@@ -31,7 +31,7 @@ Just run the local installer shell script to install the libraries
 you'll need for python and/or javascript samples:
 
 ```
-  **./install_tools**
+  ./install_tools
 ```
 
 
