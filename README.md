@@ -21,7 +21,9 @@ current version (at time of writing it is version 2.7.10)
 
 On OSX yu can run
 
+```
   brew install node
+```
 
 to install the latest version, or visit [Joyent/Node](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) and follow instructions for your platform.
 
