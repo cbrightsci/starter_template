@@ -36,6 +36,7 @@ you'll need for python and/or javascript samples:
   ./install_tools
 ```
 
+You should only need to run this once.
 
 ### 2. Install the Qumulo REST API Python Wrapper library
 Currently the Qumulo REST API python library is available only by
@@ -115,6 +116,8 @@ We support [Pylint](http://www.pylint.org/) and [JsHint](http://jshint.com/) / [
 
 from the directory where you downloaded this sample project.
 
+You should `./runlint` each time you update your source code.
+
 
 ### 5. Create and run tests to verify that your sample works
 We support Python unit tests via [Nose](http://pythontesting.net/framework/nose/nose-introduction/) and Javascript tests using [Jasmine](http://jasmine.github.io/2.3/introduction.html).  You can run all python and javascript tests in the current directory (one python test is included by default) by running the following shell script:
@@ -125,3 +128,4 @@ We support Python unit tests via [Nose](http://pythontesting.net/framework/nose/
 
 ```
 
+Ideally you should create tests that exercise your sample code, so you can easily tell if your sample works when we drop new versions of the Qumulo REST API framework or when you've made changes to your sample.  
