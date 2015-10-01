@@ -32,7 +32,7 @@ SCRIPTNAME.py --host ip_address|hostname [options]
 
 [-u | --user] username              Use 'username' for authentication
                                         (defaults to 'admin')
-[-p | --passwd] password            Use 'password' for authentication
+[-p | --pass] password            Use 'password' for authentication
                                         (defaults to 'admin')
 [-P | --port] number                Use 'number' for the API server port
                                         (defaults to 8000)
@@ -70,6 +70,7 @@ class FileStatsCommand(object):
         self.port = 8000
         self.user = 'admin'
         self.passwd = 'admin'
+        self.host = 'music' 
         self.demo_var = None
         self.connection = None
         self.creds = None
