@@ -39,16 +39,7 @@ you'll need for python and/or javascript samples:
 You should only need to run this once.
 
 ### 2. Install the Qumulo REST API Python Wrapper library
-Currently the Qumulo REST API python library is available only by
-request -- you'll need an oauth2 token from Qumulo in order to download
-it.
-
-Once you have a token from Qumulo, update the line in the requirements.txt file in the
-installation directory with <your token> as follows:
-
-    git+https://<your token>:x-oauth-basic@github.com/Qumulo/qumulo_rest_api
-
-and then rerun
+run
 
 ```
   pip install -r requirements.txt
